@@ -1,0 +1,934 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-07-14",
+  "skills": [
+    {
+      "id": "amazon-product-selection",
+      "name_cn": "选品专家",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "从零选品",
+          "text": "帮我选品，预算 5 万美金，想做厨房类目"
+        },
+        {
+          "label": "验证品类",
+          "text": "我看中了 trash bags 1.2 gal 这个细分，帮我做市场验证"
+        },
+        {
+          "label": "品类机会发现",
+          "text": "扫描亚马逊上有哪些高增长低竞争的品类机会"
+        },
+        {
+          "label": "TikTok 跨平台参考",
+          "text": "结合 TikTok 趋势帮我找到适合亚马逊的潜力品类"
+        },
+        {
+          "label": "利润可行性测算",
+          "text": "计算这个垃圾袋品类的毛利和净利润空间"
+        },
+        {
+          "label": "风险评估",
+          "text": "帮我评估进入可降解垃圾袋赛道的 6 大风险"
+        }
+      ]
+    },
+    {
+      "id": "amazon-launch-pipeline",
+      "name_cn": "新品全流程 Pipeline",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "从零启动全流程",
+          "text": "启动 55 Gallon 黑色垃圾袋新品全流程，从选品到广告"
+        },
+        {
+          "label": "已有选品跳入",
+          "text": "选品已确定（B0XXXXXXX 对标），直接进入竞品分析和后续阶段"
+        },
+        {
+          "label": "已有竞品跳入",
+          "text": "竞品分析已完成，进入运营统筹和 Listing 方案"
+        },
+        {
+          "label": "单阶段补充",
+          "text": "只需要 Phase 5（图片规划）和 Phase 6（广告方案）"
+        },
+        {
+          "label": "查看总纲",
+          "text": "生成当前新品项目的一页纸运营总纲"
+        },
+        {
+          "label": "全流程诊断",
+          "text": "我现在卡在某个阶段，帮我梳理从选品到监控的全流程缺口"
+        }
+      ]
+    },
+    {
+      "id": "amazon-operations",
+      "name_cn": "运营专家",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "店铺诊断",
+          "text": "诊断 T.FORING 垃圾袋店铺的利润表，找出运营问题"
+        },
+        {
+          "label": "运营罗盘分析",
+          "text": "用运营罗盘分析当前店铺 DNA，匹配运营模式"
+        },
+        {
+          "label": "战略规划",
+          "text": "制定下半年亚马逊店铺增长战略和季度里程碑"
+        },
+        {
+          "label": "库存预警",
+          "text": "建立 5 级库存预警体系，防止断货和滞销"
+        },
+        {
+          "label": "合规风险排查",
+          "text": "检查店铺是否存在被下架/封号的风险点"
+        },
+        {
+          "label": "旺季备战",
+          "text": "制定 Prime Day 和黑五的运营备战方案"
+        }
+      ]
+    },
+    {
+      "id": "amazon-ads",
+      "name_cn": "广告专家",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "报表诊断",
+          "text": "分析这份 SP 广告报表，找出 ACOS 超过 40% 的原因"
+        },
+        {
+          "label": "全案策略",
+          "text": "为新品 1.2 Gal 垃圾袋设计三阶段 SP+SB+SD 广告方案"
+        },
+        {
+          "label": "竞价优化",
+          "text": "根据广告数据优化关键词竞价，降低 ACOS 到 25% 以内"
+        },
+        {
+          "label": "ABC 关键词分层",
+          "text": "用 ABC 三层法帮我划分核心词/长尾词/防御词"
+        },
+        {
+          "label": "Rufus 时代适配",
+          "text": "重新设计广告策略，适配 Rufus AI 购物助手的新搜索逻辑"
+        },
+        {
+          "label": "预算分配计算",
+          "text": "月预算 3000 美金，帮我分配 SP/SB/SD 的合理比例"
+        }
+      ]
+    },
+    {
+      "id": "amazon-listing-optimization",
+      "name_cn": "Listing 优化专家",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "标题优化",
+          "text": "优化这款垃圾袋标题，符合 2026 新规 75 字符限制"
+        },
+        {
+          "label": "五点描述",
+          "text": "重写这款咖啡杯的五点描述，适配 Alexa+Rufus 语音搜索"
+        },
+        {
+          "label": "A+ 诊断",
+          "text": "诊断这个 Listing 的 A+ 页面和图片内容是否符合最新规范"
+        },
+        {
+          "label": "A10 排名诊断",
+          "text": "用 A10 算法 7 因素诊断这个 ASIN 为什么排名下滑"
+        },
+        {
+          "label": "合规检查",
+          "text": "检查这个 Listing 是否有违反亚马逊 12 条合规红线的内容"
+        },
+        {
+          "label": "搜索词优化",
+          "text": "优化后台 Search Terms，提升自然搜索流量匹配度"
+        }
+      ]
+    },
+    {
+      "id": "amazon-image-generator-v2",
+      "name_cn": "产品图片生成",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "完整方案",
+          "text": "为 1.2 Gal 彩色垃圾袋生成 12 张 Listing 图完整方案（主图/尺寸图/对比图/细节图/场景x3/功能x3/价值图/拆解图）"
+        },
+        {
+          "label": "场景图",
+          "text": "生成厨房、卧室、浴室三个场景的垃圾袋使用图"
+        },
+        {
+          "label": "主图优化",
+          "text": "优化这款产品的主图，符合亚马逊纯白底要求"
+        },
+        {
+          "label": "A+ 套图",
+          "text": "设计一套 A+ 页面的图文模块方案"
+        },
+        {
+          "label": "代码流水线",
+          "text": "用代码流水线模式批量生成产品图片"
+        },
+        {
+          "label": "品牌一致性检查",
+          "text": "检查现有图片是否符合 T.FORING 统一设计规范"
+        }
+      ]
+    },
+    {
+      "id": "keyword-expert",
+      "name_cn": "关键词专家",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "词库搭建",
+          "text": "搭建 trash bags 1.2 gal 的完整关键词词库，含搜索量/竞争度/相关性"
+        },
+        {
+          "label": "关键词挖掘",
+          "text": "挖掘 kitchen trash bags 类目下所有高流量关键词"
+        },
+        {
+          "label": "竞品反查",
+          "text": "反查 B0XXXXXXX 这个爆款的所有自然搜索关键词"
+        },
+        {
+          "label": "埋词方案",
+          "text": "生成 Listing 标题+五点+Search Terms 的埋词方案"
+        },
+        {
+          "label": "关键词趋势",
+          "text": "分析 compostable trash bags 这个关键词的搜索趋势"
+        },
+        {
+          "label": "长尾词拓展",
+          "text": "帮我在核心词基础上拓展 50 个长尾关键词"
+        }
+      ]
+    },
+    {
+      "id": "competitor-full-report",
+      "name_cn": "竞品深度分析",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "全方位竞品分析",
+          "text": "深度分析 Glad 4 gallon trash bags 的所有维度（流量/关键词/广告/评论/Listing）"
+        },
+        {
+          "label": "流量拆解",
+          "text": "拆解 B0XXXXXXX 的流量来源结构（自然 vs 广告 vs 外链）"
+        },
+        {
+          "label": "广告策略推断",
+          "text": "通过关键词反推竞品当前的广告投放策略"
+        },
+        {
+          "label": "评论挖掘",
+          "text": "分析竞品 100 条差评，找出产品痛点和差异化机会"
+        },
+        {
+          "label": "多 ASIN 交叉",
+          "text": "同时分析 3 个竞品 ASIN，生成横向对比矩阵"
+        },
+        {
+          "label": "如何打败竞品",
+          "text": "帮我制定如何打败 B0XXXXXXX 的具体切入方案和执行路径"
+        }
+      ]
+    },
+    {
+      "id": "amazon-finance",
+      "name_cn": "财务核算",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "单品利润核算",
+          "text": "计算这款垃圾袋的完整单品利润（FBA 费/佣金/广告/退货/头程）"
+        },
+        {
+          "label": "月度报表",
+          "text": "生成 7 月亚马逊业务的利润表、资产负债表、现金流量表"
+        },
+        {
+          "label": "成本优化",
+          "text": "分析物流和仓储成本，找出降低 15% 费用的优化路径"
+        },
+        {
+          "label": "现金流预测",
+          "text": "预测 Q3 季度的补货现金流需求和资金缺口"
+        },
+        {
+          "label": "税务合规",
+          "text": "检查当前业务的税务合规情况，给出优化建议"
+        },
+        {
+          "label": "定价策略",
+          "text": "基于成本结构和竞品价格，计算最优定价区间"
+        }
+      ]
+    },
+    {
+      "id": "amazon-hr",
+      "name_cn": "团队 HR",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "团队搭建",
+          "text": "设计 5 人亚马逊运营团队的组织架构和岗位职责"
+        },
+        {
+          "label": "招聘方案",
+          "text": "帮我写运营主管和广告专员的 JD 和招聘标准"
+        },
+        {
+          "label": "薪酬设计",
+          "text": "设计底薪+提成+年终的运营绩效考核和薪酬体系"
+        },
+        {
+          "label": "培训体系",
+          "text": "制定新入职亚马逊运营的 90 天培训计划"
+        },
+        {
+          "label": "团队诊断",
+          "text": "运营人员流失率高，分析原因并给出留人方案"
+        },
+        {
+          "label": "OKR 制定",
+          "text": "帮运营团队制定 Q3 的 OKR 目标和关键结果"
+        }
+      ]
+    },
+    {
+      "id": "brand-launch-framework",
+      "name_cn": "新消费品牌 10 步法",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "从零启动品牌",
+          "text": "用 10 步法帮我从零启动一个新消费品牌（想做个护赛道）"
+        },
+        {
+          "label": "赛道对比分析",
+          "text": "对比分析 3 个潜力赛道（宠物/个护/家居），帮我最终决策"
+        },
+        {
+          "label": "品牌定位诊断",
+          "text": "诊断 T.FORING 在消费者心智中的位置，制定重新定位策略"
+        },
+        {
+          "label": "竞品对标",
+          "text": "对标 5 个同赛道头部品牌，生成十维横向对比矩阵"
+        },
+        {
+          "label": "供应链验证",
+          "text": "至少对比 2 家供应商，验证产品配方的可行性和成本"
+        },
+        {
+          "label": "投资人书",
+          "text": "生成一份品牌项目书（含市场/定位/财务/增长路径）"
+        }
+      ]
+    },
+    {
+      "id": "ai-private-domain",
+      "name_cn": "私域运营专家",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "从零搭建私域",
+          "text": "帮我设计一个完整的私域运营体系（产品：高端茶叶）"
+        },
+        {
+          "label": "小红书引流",
+          "text": "设计小红书到微信私域的完整引流路径和注意事项"
+        },
+        {
+          "label": "成交 SOP",
+          "text": "生成私域成交的完整话术 SOP（破冰→信任→成交→复购）"
+        },
+        {
+          "label": "朋友圈内容规划",
+          "text": "帮我制定 30 天朋友圈内容排期（532 法则）"
+        },
+        {
+          "label": "私域诊断",
+          "text": "诊断当前私域转化率低的原因，给出优化方案"
+        },
+        {
+          "label": "团队搭建",
+          "text": "搭建私域运营黄金铁三角团队（内容/运营/销售）"
+        }
+      ]
+    },
+    {
+      "id": "social-creative-lab",
+      "name_cn": "社交媒体创意",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "品类破壁",
+          "text": "帮我给垃圾袋设计一套打破品类思维的 TikTok 创意方案"
+        },
+        {
+          "label": "病毒创意批量",
+          "text": "为这款咖啡杯生成 100 条社交媒体病毒创意（TikTok/Reels/YouTube）"
+        },
+        {
+          "label": "社交货币测试",
+          "text": "评估这 5 个创意哪个最有可能成为社交货币"
+        },
+        {
+          "label": "跨平台适配",
+          "text": "把这个 TikTok 爆款创意改编成 Instagram 和 Facebook 版本"
+        },
+        {
+          "label": "情绪翻译",
+          "text": "把这款产品的功能卖点翻译成 10 种情绪驱动型内容角度"
+        },
+        {
+          "label": "创意诊断",
+          "text": "分析这个视频为什么没火，给出优化方向"
+        }
+      ]
+    },
+    {
+      "id": "us-film-storyboard",
+      "name_cn": "影视分镜脚本",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "TikTok 广告脚本",
+          "text": "为 16oz 咖啡杯写一个 15-30 秒的 TikTok 爆款视频脚本"
+        },
+        {
+          "label": "亚马逊主图视频",
+          "text": "写一个 60 秒亚马逊主图视频四幕分镜脚本（含审核避坑）"
+        },
+        {
+          "label": "Seedance 生成",
+          "text": "生成一个可以用 Seedance 2.0 直接制作的多段分镜脚本"
+        },
+        {
+          "label": "多平台版本",
+          "text": "把一个创意同时输出 TikTok / Instagram / Facebook / YouTube 四个版本"
+        },
+        {
+          "label": "美式本土化",
+          "text": "写一个美国本土风格的垃圾袋 Instagram Reels 脚本（禁止中式英语）"
+        },
+        {
+          "label": "亚马逊审核合规",
+          "text": "检查现有视频脚本是否违反亚马逊广告审核规则"
+        }
+      ]
+    },
+    {
+      "id": "academic-paper-writer",
+      "name_cn": "学术论文撰写",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "选题诊断",
+          "text": "评估「AI 在跨境电商中的应用」这个选题的新颖性和可行性"
+        },
+        {
+          "label": "写作指导",
+          "text": "帮我按照 IMRaD 结构写这篇论文的 Introduction 部分"
+        },
+        {
+          "label": "投稿前检查",
+          "text": "检查这篇论文在投稿 Frontiers 前的格式/引用/声明合规性"
+        },
+        {
+          "label": "13 维度质量诊断",
+          "text": "用 13 维度框架全面诊断这篇论文的质量"
+        },
+        {
+          "label": "文献综述",
+          "text": "帮我在 Web of Science 检索基础上生成结构化文献综述"
+        },
+        {
+          "label": "审稿回复",
+          "text": "帮我针对这 3 条审稿意见写逐条回复信"
+        }
+      ]
+    },
+    {
+      "id": "training-doc-template",
+      "name_cn": "培训资料模板",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "培训手册生成",
+          "text": "用统一模板把「亚马逊运营入门」制作成 10 章培训手册"
+        },
+        {
+          "label": "SOP 文档",
+          "text": "生成「选品 SOP 全流程」的标准化培训资料"
+        },
+        {
+          "label": "行业知识沉淀",
+          "text": "把我们的运营经验沉淀成可复用的培训文档"
+        },
+        {
+          "label": "课程资料",
+          "text": "把这份音频转写整理成结构化的内部课程资料"
+        },
+        {
+          "label": "新人入职指南",
+          "text": "制作「亚马逊运营新人 90 天入职指南」培训资料"
+        }
+      ]
+    },
+    {
+      "id": "minimax-docx",
+      "name_cn": "Word 文档生成",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "生成专业报告",
+          "text": "把这份市场分析生成专业 ModernCorporate 风格 Word 文档"
+        },
+        {
+          "label": "公文排版",
+          "text": "按 GB/T 9704 标准排版这份公司通知公文"
+        },
+        {
+          "label": "套模板",
+          "text": "把这份内容套用现有模板格式，生成正式文档"
+        },
+        {
+          "label": "论文排版",
+          "text": "按 APA 7th 标准排版这篇学术论文"
+        },
+        {
+          "label": "批量处理",
+          "text": "把 10 份数据表格批量生成统一格式的 Word 文档"
+        },
+        {
+          "label": "格式优化",
+          "text": "优化这份 Word 文档的样式/页码/目录/页眉页脚"
+        }
+      ]
+    },
+    {
+      "id": "lark-unified",
+      "name_cn": "飞书全能套件",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "自动推送数据",
+          "text": "每天自动在飞书群发送前一天的销售汇总"
+        },
+        {
+          "label": "创建周报文档",
+          "text": "在飞书创建本周运营周报文档（结构化模板）"
+        },
+        {
+          "label": "上传文件",
+          "text": "把广告报表 Excel 上传到飞书云盘并分享给团队"
+        },
+        {
+          "label": "多维表格搭建",
+          "text": "在飞书多维表格搭建运营数据追踪表（含仪表盘）"
+        },
+        {
+          "label": "日程协调",
+          "text": "帮我在团队 5 人中找到下周二的会议时间"
+        },
+        {
+          "label": "创建任务",
+          "text": "在飞书任务中创建运营本周待办并分配成员"
+        }
+      ]
+    },
+    {
+      "id": "huoban-expert",
+      "name_cn": "伙伴云专家",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "搭建 CRM",
+          "text": "在伙伴云从零搭建一套客户管理系统（含表格/视图/流程）"
+        },
+        {
+          "label": "进销存系统",
+          "text": "搭建采购-入库-销售-出库的完整进销存流程"
+        },
+        {
+          "label": "自动化流程",
+          "text": "设计库存低于安全线自动发起补货审批的自动化流程"
+        },
+        {
+          "label": "权限配置",
+          "text": "配置运营/仓库/财务三个角色的差异化权限"
+        },
+        {
+          "label": "数据仓库",
+          "text": "用聚合表把销售数据和库存数据做交叉分析"
+        },
+        {
+          "label": "仪表盘搭建",
+          "text": "搭建运营数据大屏（含销售趋势/库存预警/利润看板）"
+        }
+      ]
+    },
+    {
+      "id": "skill-manual",
+      "name_cn": "技能使用手册",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "查询技能列表",
+          "text": "我有哪些亚马逊运营相关的技能？"
+        },
+        {
+          "label": "调用指引",
+          "text": "告诉我竞品分析该用哪个 Skill，怎么触发？"
+        },
+        {
+          "label": "技能边界",
+          "text": "competitor-full-report 和 keyword-expert 有什么区别？什么时候用哪个？"
+        },
+        {
+          "label": "能力地图",
+          "text": "帮我梳理当前所有技能的完整能力地图"
+        },
+        {
+          "label": "场景路由",
+          "text": "我要做新品上市全流程，应该走哪个 Skill 体系？"
+        }
+      ]
+    },
+    {
+      "id": "skill-writer",
+      "name_cn": "Skill 撰写专家",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "新建 Skill",
+          "text": "帮我写一个「小红书爆款笔记创作」的完整 Skill"
+        },
+        {
+          "label": "优化 Skill",
+          "text": "amazon-ads 的触发词不准确，帮我优化整个 SKILL.md"
+        },
+        {
+          "label": "质量诊断",
+          "text": "用 7 项质量标准检查 competitor-full-report 这个 Skill"
+        },
+        {
+          "label": "结构设计",
+          "text": "为「海外社媒文案」技能设计 7 章标准结构"
+        },
+        {
+          "label": "边界定义",
+          "text": "帮我定义新 Skill 和现有 Skill 的职责边界，避免冲突"
+        }
+      ]
+    },
+    {
+      "id": "find-skills",
+      "name_cn": "技能发现安装",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "搜索技能",
+          "text": "有没有小红书运营相关的 marketplace 技能？"
+        },
+        {
+          "label": "安装技能",
+          "text": "给我装一个 SEO 优化的技能"
+        },
+        {
+          "label": "能力缺口扫描",
+          "text": "我现在缺少哪些常用功能的技能？帮我扫一遍"
+        },
+        {
+          "label": "中文搜索",
+          "text": "搜索有没有中文私域运营或微信营销相关的技能"
+        },
+        {
+          "label": "推荐技能",
+          "text": "根据我的使用习惯，推荐一些值得安装的技能"
+        }
+      ]
+    },
+    {
+      "id": "Skillhub-Store",
+      "name_cn": "Skillhub 商店",
+      "category": "other",
+      "prompts": [
+        {
+          "label": "浏览市场",
+          "text": "打开 Skillhub 商店看看最新上架的技能"
+        },
+        {
+          "label": "按分类浏览",
+          "text": "看看亚马逊运营分类下有哪些热门技能"
+        },
+        {
+          "label": "安装技能",
+          "text": "从 Skillhub 安装一个竞品监控技能"
+        },
+        {
+          "label": "管理已安装",
+          "text": "查看我已经通过 Skillhub 安装了哪些技能"
+        }
+      ]
+    },
+    {
+      "id": "wb-finance-skill",
+      "name_cn": "金融投资总入口",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "股票查询",
+          "text": "查询沪深 300 指数最新行情和估值水平"
+        },
+        {
+          "label": "基金分析",
+          "text": "帮我分析这只基金的持仓风格和风险收益比"
+        },
+        {
+          "label": "持仓诊断",
+          "text": "诊断我当前的股票持仓结构是否合理"
+        }
+      ]
+    },
+    {
+      "id": "westock-data",
+      "name_cn": "金融市场数据",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "行情数据",
+          "text": "查询贵州茅台和五粮液的财务数据对比"
+        },
+        {
+          "label": "研报检索",
+          "text": "搜索亚马逊最新的券商研报"
+        },
+        {
+          "label": "财报分析",
+          "text": "查看苹果最新季度的财报数据"
+        }
+      ]
+    },
+    {
+      "id": "westock-tool",
+      "name_cn": "选股选基工具",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "条件筛选",
+          "text": "筛选近 30 天 MACD 金叉 + 市盈率低于 20 的 A 股"
+        },
+        {
+          "label": "高股息 ETF",
+          "text": "推荐 5 只高股息低波动的 ETF"
+        },
+        {
+          "label": "行业排行",
+          "text": "今天涨幅最大的 10 个行业板块是哪些"
+        }
+      ]
+    },
+    {
+      "id": "neodata-financial-search",
+      "name_cn": "金融数据搜索",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "宏观数据",
+          "text": "查询中国最新的 CPI、PPI 和 PMI 数据"
+        },
+        {
+          "label": "美股搜索",
+          "text": "搜索亚马逊股票的基本面和估值数据"
+        },
+        {
+          "label": "汇率查询",
+          "text": "查询美元兑人民币的最新汇率和走势"
+        }
+      ]
+    },
+    {
+      "id": "expert-manager",
+      "name_cn": "专家包管理",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "创建专家",
+          "text": "把亚马逊运营这套方法论转成专家包"
+        },
+        {
+          "label": "合规检查",
+          "text": "检查我的专家包是否符合发布标准"
+        }
+      ]
+    },
+    {
+      "id": "marketplace-skill-installer",
+      "name_cn": "市场技能安装器",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "一键安装",
+          "text": "从推荐市场搜索并安装亚马逊广告相关的技能"
+        }
+      ]
+    },
+    {
+      "id": "skill-creator",
+      "name_cn": "Skill 创建指南",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "学习创建",
+          "text": "教我如何创建一个高质量的 Skill"
+        }
+      ]
+    },
+    {
+      "id": "cloudstudio-deploy",
+      "name_cn": "云端部署",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "部署网站",
+          "text": "把这个仪表盘部署到 CloudStudio 线上访问"
+        }
+      ]
+    },
+    {
+      "id": "3d-model-video-fx",
+      "name_cn": "3D 模型与视频特效",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "3D 建模",
+          "text": "生成这款咖啡杯的 3D 展示模型"
+        },
+        {
+          "label": "视频特效",
+          "text": "给这张产品图添加变身/拥抱动效视频"
+        }
+      ]
+    },
+    {
+      "id": "agent-browser",
+      "name_cn": "浏览器自动化",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "打开网页",
+          "text": "打开亚马逊前台搜索 small trash bags 并截图 Top 10"
+        },
+        {
+          "label": "网页分析",
+          "text": "访问这个竞品官网，提取产品线信息"
+        }
+      ]
+    },
+    {
+      "id": "playwright-cli",
+      "name_cn": "Playwright 测试",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "自动化测试",
+          "text": "测试这个网页的表单提交流程和响应时间"
+        }
+      ]
+    },
+    {
+      "id": "xlsx",
+      "name_cn": "Excel 处理",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "数据处理",
+          "text": "打开广告报表 Excel，提取关键指标并生成汇总"
+        }
+      ]
+    },
+    {
+      "id": "docx",
+      "name_cn": "Word 处理",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "文档读取",
+          "text": "读取这份竞品分析 Word 文档，提取关键信息"
+        }
+      ]
+    },
+    {
+      "id": "pptx",
+      "name_cn": "PPT 处理",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "生成 PPT",
+          "text": "根据这份运营数据生成季度汇报 PPT"
+        }
+      ]
+    },
+    {
+      "id": "pdf",
+      "name_cn": "PDF 处理",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "PDF 提取",
+          "text": "提取这份 PDF 中的表格数据并转成 Excel"
+        }
+      ]
+    },
+    {
+      "id": "pdfkit-py",
+      "name_cn": "PDF 工具箱",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "合并 PDF",
+          "text": "把这 5 个报表 PDF 合并成一个文件"
+        },
+        {
+          "label": "PDF 加密",
+          "text": "给这份合同 PDF 添加密码保护"
+        }
+      ]
+    },
+    {
+      "id": "weixinpay-*",
+      "name_cn": "微信支付",
+      "category": "builtin",
+      "prompts": [
+        {
+          "label": "开通支付",
+          "text": "帮我开通微信 AI 支付功能"
+        },
+        {
+          "label": "支付反馈",
+          "text": "上报微信支付过程中遇到的问题"
+        }
+      ]
+    }
+  ]
+}
