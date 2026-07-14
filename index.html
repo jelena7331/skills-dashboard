@@ -41,12 +41,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 .scan-info{text-align:right;font-size:12px;color:var(--text-hint);margin-bottom:16px}
 
 .prompt-section{margin-bottom:28px}
-.prompt-skill{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-bottom:12px}
+.prompts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.prompt-skill{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column}
 .prompt-skill-header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
-.prompt-skill-dot{width:8px;height:8px;border-radius:50%}
+.prompt-skill-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
 .prompt-skill-id{font-family:'SF Mono',Consolas,monospace;font-size:11px;color:var(--text-hint)}
 .prompt-skill-name{font-size:14px;font-weight:600}
-.prompt-list{display:flex;flex-direction:column;gap:8px;padding-left:18px}
+.prompt-list{display:flex;flex-direction:column;gap:8px;flex:1}
 .prompt-item{background:#f8f9fa;border-radius:8px;padding:10px 14px;cursor:pointer;transition:all 0.15s;border-left:3px solid var(--border)}
 .prompt-item:hover{background:#fff;border-left-color:var(--amazon-orange);box-shadow:0 1px 4px rgba(0,0,0,0.06)}
 .prompt-label{font-size:11px;color:var(--amazon-orange);font-weight:600;margin-bottom:2px}
@@ -94,9 +95,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 .footer p{font-size:12px;color:var(--text-hint)}
 .footer a{color:var(--amazon-blue);text-decoration:none}
 
+@media(max-width:1024px){
+  .prompts-grid{grid-template-columns:repeat(2,1fr)}
+}
 @media(max-width:768px){
   .header{flex-direction:column;text-align:center}
   .cards-grid{grid-template-columns:1fr}
+  .prompts-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -307,6 +312,7 @@ function renderPromptGuide() {
     html += `<div class="category-count">${items.length} 个技能</div>`;
     html += `</div>`;
 
+    html += `<div class="prompts-grid">`;
     for (const s of items) {
       html += `<div class="prompt-skill">`;
       html += `<div class="prompt-skill-header">`;
@@ -325,6 +331,7 @@ function renderPromptGuide() {
       html += `</div>`;
       html += `</div>`;
     }
+    html += `</div>`;
 
     html += `</div>`;
   }
