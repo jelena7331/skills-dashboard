@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_scanned": "2026-07-14T15:18:54+08:00",
+  "last_scanned": "2026-07-15T11:08:49+08:00",
   "scan_path": "~/.workbuddy/skills/",
   "categories": [
     {
@@ -74,7 +74,8 @@
           "label": "风险评估",
           "text": "帮我评估进入可降解垃圾袋赛道的 6 大风险"
         }
-      ]
+      ],
+      "updated_at": "2026-03-26"
     },
     {
       "id": "amazon-operations",
@@ -109,7 +110,8 @@
           "label": "旺季备战",
           "text": "制定 Prime Day 和黑五的运营备战方案"
         }
-      ]
+      ],
+      "updated_at": "2026-03-26"
     },
     {
       "id": "amazon-ads",
@@ -144,7 +146,8 @@
           "label": "预算分配计算",
           "text": "月预算 3000 美金，帮我分配 SP/SB/SD 的合理比例"
         }
-      ]
+      ],
+      "updated_at": "2026-03-26"
     },
     {
       "id": "amazon-listing-optimization",
@@ -179,14 +182,15 @@
           "label": "搜索词优化",
           "text": "优化后台 Search Terms，提升自然搜索流量匹配度"
         }
-      ]
+      ],
+      "updated_at": "2026-03-26"
     },
     {
       "id": "amazon-image-generator-v2",
       "name_cn": "产品图片生成",
       "category": "amazon",
       "source": "user",
-      "status": "active",
+      "status": "removed",
       "description": "12 张图片方案生成：主图、尺寸图、对比图、细节图、场景图 x3、功能图 x3、价值图、拆解图。AI 自动产品分析 + 动态提示词生成，6 模型链式降级，Error 自动兜底。",
       "installed_at": "2026-06-16",
       "prompts": [
@@ -249,7 +253,8 @@
           "label": "定价策略",
           "text": "基于成本结构和竞品价格，计算最优定价区间"
         }
-      ]
+      ],
+      "updated_at": "2026-04-06"
     },
     {
       "id": "amazon-hr",
@@ -284,7 +289,8 @@
           "label": "OKR 制定",
           "text": "帮运营团队制定 Q3 的 OKR 目标和关键结果"
         }
-      ]
+      ],
+      "updated_at": "2026-04-06"
     },
     {
       "id": "keyword-expert",
@@ -319,7 +325,8 @@
           "label": "长尾词拓展",
           "text": "帮我在核心词基础上拓展 50 个长尾关键词"
         }
-      ]
+      ],
+      "updated_at": "2026-05-25"
     },
     {
       "id": "competitor-full-report",
@@ -354,7 +361,8 @@
           "label": "如何打败竞品",
           "text": "帮我制定如何打败 B0XXXXXXX 的具体切入方案和执行路径"
         }
-      ]
+      ],
+      "updated_at": "2026-05-25"
     },
     {
       "id": "amazon-launch-pipeline",
@@ -389,7 +397,8 @@
           "label": "全流程诊断",
           "text": "我现在卡在某个阶段，帮我梳理从选品到监控的全流程缺口"
         }
-      ]
+      ],
+      "updated_at": "2026-07-14"
     },
     {
       "id": "brand-launch-framework",
@@ -424,7 +433,8 @@
           "label": "投资人书",
           "text": "生成一份品牌项目书（含市场/定位/财务/增长路径）"
         }
-      ]
+      ],
+      "updated_at": "2026-07-13"
     },
     {
       "id": "ai-private-domain",
@@ -459,7 +469,8 @@
           "label": "团队搭建",
           "text": "搭建私域运营黄金铁三角团队（内容/运营/销售）"
         }
-      ]
+      ],
+      "updated_at": "2026-05-09"
     },
     {
       "id": "social-creative-lab",
@@ -494,7 +505,8 @@
           "label": "创意诊断",
           "text": "分析这个视频为什么没火，给出优化方向"
         }
-      ]
+      ],
+      "updated_at": "2026-05-22"
     },
     {
       "id": "us-film-storyboard",
@@ -529,7 +541,8 @@
           "label": "亚马逊审核合规",
           "text": "检查现有视频脚本是否违反亚马逊广告审核规则"
         }
-      ]
+      ],
+      "updated_at": "2026-05-16"
     },
     {
       "id": "academic-paper-writer",
@@ -564,7 +577,8 @@
           "label": "审稿回复",
           "text": "帮我针对这 3 条审稿意见写逐条回复信"
         }
-      ]
+      ],
+      "updated_at": "2026-06-02"
     },
     {
       "id": "training-doc-template",
@@ -595,7 +609,8 @@
           "label": "新人入职指南",
           "text": "制作「亚马逊运营新人 90 天入职指南」培训资料"
         }
-      ]
+      ],
+      "updated_at": "2026-07-09"
     },
     {
       "id": "minimax-docx",
@@ -630,7 +645,8 @@
           "label": "格式优化",
           "text": "优化这份 Word 文档的样式/页码/目录/页眉页脚"
         }
-      ]
+      ],
+      "updated_at": "2026-07-14"
     },
     {
       "id": "lark-unified",
@@ -665,7 +681,8 @@
           "label": "创建任务",
           "text": "在飞书任务中创建运营本周待办并分配成员"
         }
-      ]
+      ],
+      "updated_at": "2026-07-14"
     },
     {
       "id": "huoban-expert",
@@ -700,7 +717,8 @@
           "label": "仪表盘搭建",
           "text": "搭建运营数据大屏（含销售趋势/库存预警/利润看板）"
         }
-      ]
+      ],
+      "updated_at": "2026-05-19"
     },
     {
       "id": "skill-manual",
@@ -731,7 +749,8 @@
           "label": "场景路由",
           "text": "我要做新品上市全流程，应该走哪个 Skill 体系？"
         }
-      ]
+      ],
+      "updated_at": "2026-05-25"
     },
     {
       "id": "skill-writer",
@@ -762,7 +781,8 @@
           "label": "边界定义",
           "text": "帮我定义新 Skill 和现有 Skill 的职责边界，避免冲突"
         }
-      ]
+      ],
+      "updated_at": "2026-05-06"
     },
     {
       "id": "find-skills",
@@ -793,7 +813,8 @@
           "label": "推荐技能",
           "text": "根据我的使用习惯，推荐一些值得安装的技能"
         }
-      ]
+      ],
+      "updated_at": "2026-04-04"
     },
     {
       "id": "Skillhub-Store",
@@ -820,7 +841,8 @@
           "label": "管理已安装",
           "text": "查看我已经通过 Skillhub 安装了哪些技能"
         }
-      ]
+      ],
+      "updated_at": "2026-04-04"
     },
     {
       "id": "wb-finance-skill",
@@ -1135,6 +1157,17 @@
           "text": "处理 WeixinPay-Required 相关内容"
         }
       ]
+    },
+    {
+      "id": "amazon-image-planner",
+      "name_cn": "",
+      "category": "",
+      "source": "user",
+      "status": "unclassified",
+      "description": "",
+      "installed_at": "2026-07-14",
+      "updated_at": "2026-07-14",
+      "dir_name": "amazon-image-planner"
     }
   ]
 }

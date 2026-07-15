@@ -277,7 +277,7 @@ function renderSkillList() {
         html += `<div class="card-desc">${s.description || ''}</div>`;
         html += `<div class="card-footer">`;
         html += `<span class="badge ${badgeClass}">${badgeText}</span>`;
-        html += `<span class="card-date">${s.installed_at || ''}</span>`;
+        html += `<span class="card-date">${s.updated_at || s.installed_at || ''}</span>`;
         html += `</div>`;
         html += `</div>`;
       }
