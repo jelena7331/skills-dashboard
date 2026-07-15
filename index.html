@@ -148,7 +148,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 <div id="content"></div>
 
 <div class="footer">
-  <p>Skills Dashboard v1.0 &middot; <a href="javascript:void(0)" onclick="rescan()">运行扫描</a> &middot; 数据源: <code>~/.workbuddy/skills/</code></p>
+  <p>Skills Dashboard v1.0 &middot; <a href="javascript:void(0)" onclick="rescan()">🔄 同步数据</a> &middot; 数据源: <code>~/.workbuddy/skills/</code></p>
 </div>
 
 </div>
@@ -399,7 +399,7 @@ function showToast(msg) {
 }
 
 function rescan() {
-  showToast('请在本地运行: python3 scan_and_update.py');
+  showToast('在 WorkBuddy 终端运行: bash deploy.sh (一键扫描+部署)');
 }
 
 loadRegistry();
