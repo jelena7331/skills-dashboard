@@ -199,11 +199,11 @@ function renderStats() {
 
 function renderFilters() {
   const userCats = REGISTRY.categories;
-  let chips = `<div class="chip active" data-cat="all" onclick="setFilter('all')">全部<span class="count">${REGISTRY.skills.length}</span></div>`;
+  let chips = `<div class="chip${activeFilter === 'all' ? ' active' : ''}" data-cat="all" onclick="setFilter('all')">全部<span class="count">${REGISTRY.skills.length}</span></div>`;
   for (const cat of userCats) {
     const count = REGISTRY.skills.filter(s => s.category === cat.id).length;
     if (count === 0) continue;
-    chips += `<div class="chip" data-cat="${cat.id}" onclick="setFilter('${cat.id}')">${cat.name_cn}<span class="count">${count}</span></div>`;
+    chips += `<div class="chip${activeFilter === cat.id ? ' active' : ''}" data-cat="${cat.id}" onclick="setFilter('${cat.id}')">${cat.name_cn}<span class="count">${count}</span></div>`;
   }
   document.getElementById('filters').innerHTML = chips;
 }
