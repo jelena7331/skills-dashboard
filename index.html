@@ -9,7 +9,7 @@
 :root{
   --amazon-dark:#232f3e;--amazon-orange:#ff9900;--amazon-blue:#146eb4;
   --bg:#fafafa;--card:#fff;--border:#e0e0e0;--text:#1a1a1a;--text-sec:#666;--text-hint:#999;
-  --cat-amazon:#ff9900;--cat-brand:#8E44AD;--cat-content:#1E8449;--cat-collab:#185FA5;--cat-system:#5F5E5A;--cat-builtin:#888780;
+  --cat-amazon:#ff9900;--cat-brand:#8E44AD;--cat-content:#1E8449;--cat-company:#117A65;--cat-collab:#185FA5;--cat-system:#5F5E5A;--cat-builtin:#888780;
 }
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 .container{max-width:1200px;margin:0 auto;padding:24px 20px 60px}
@@ -67,6 +67,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 .skill-card[data-cat="amazon"]:hover{border-color:var(--cat-amazon);box-shadow:0 2px 12px rgba(255,153,0,0.14)}
 .skill-card[data-cat="brand-marketing"]:hover{border-color:var(--cat-brand);box-shadow:0 2px 12px rgba(142,68,173,0.14)}
 .skill-card[data-cat="content"]:hover{border-color:var(--cat-content);box-shadow:0 2px 12px rgba(30,132,73,0.14)}
+.skill-card[data-cat="company"]:hover{border-color:var(--cat-company);box-shadow:0 2px 12px rgba(17,122,101,0.14)}
 .skill-card[data-cat="collaboration"]:hover{border-color:var(--cat-collab);box-shadow:0 2px 12px rgba(24,95,165,0.14)}
 .skill-card[data-cat="system"]:hover{border-color:var(--cat-system);box-shadow:0 2px 12px rgba(95,94,90,0.14)}
 .skill-card[data-cat="builtin"]:hover{border-color:var(--cat-builtin);box-shadow:0 2px 12px rgba(136,135,128,0.14)}
@@ -74,6 +75,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 .skill-card[data-cat="amazon"]::before{background:var(--cat-amazon)}
 .skill-card[data-cat="brand-marketing"]::before{background:var(--cat-brand)}
 .skill-card[data-cat="content"]::before{background:var(--cat-content)}
+.skill-card[data-cat="company"]::before{background:var(--cat-company)}
 .skill-card[data-cat="collaboration"]::before{background:var(--cat-collab)}
 .skill-card[data-cat="system"]::before{background:var(--cat-system)}
 .skill-card[data-cat="builtin"]::before{background:var(--cat-builtin)}
@@ -205,9 +207,9 @@ function renderStats() {
 
 function renderFilters() {
   const userCats = REGISTRY.categories;
-  let chips = `<div class="chip${activeFilter === 'all' ? ' active' : ''}" data-cat="all" onclick="setFilter('all')">全部<span class="count">${REGISTRY.skills.length}</span></div>`;
-  for (const cat of userCats) {
-    const count = REGISTRY.skills.filter(s => s.category === cat.id).length;
+    let chips = `<div class="chip${activeFilter === 'all' ? ' active' : ''}" data-cat="all" onclick="setFilter('all')">全部<span class="count">${REGISTRY.skills.filter(s => s.status !== 'removed').length}</span></div>`;
+    for (const cat of userCats) {
+        const count = REGISTRY.skills.filter(s => s.category === cat.id && s.status !== 'removed').length;
     if (count === 0) continue;
     chips += `<div class="chip${activeFilter === cat.id ? ' active' : ''}" data-cat="${cat.id}" onclick="setFilter('${cat.id}')">${cat.name_cn}<span class="count">${count}</span></div>`;
   }
@@ -223,6 +225,7 @@ function renderScanInfo() {
 
 function renderSkillList() {
   const skills = REGISTRY.skills.filter(s => {
+    if (s.status === 'removed') return false;
     if (activeFilter !== 'all' && s.category !== activeFilter) return false;
     if (searchTerm) {
       const term = searchTerm.toLowerCase();
@@ -292,6 +295,7 @@ function renderSkillList() {
 
 function renderPromptGuide() {
   const skills = REGISTRY.skills.filter(s => {
+    if (s.status === 'removed') return false;
     if (activeFilter !== 'all' && s.category !== activeFilter) return false;
     if (searchTerm) {
       const term = searchTerm.toLowerCase();

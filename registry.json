@@ -22,6 +22,12 @@
       "accent": "#D5F5E3"
     },
     {
+      "id": "company",
+      "name_cn": "公司管理",
+      "color": "#117A65",
+      "accent": "#D1F2EB"
+    },
+    {
       "id": "collaboration",
       "name_cn": "企业协作",
       "color": "#185FA5",
@@ -222,8 +228,8 @@
     },
     {
       "id": "amazon-finance",
-      "name_cn": "财务核算",
-      "category": "amazon",
+      "name_cn": "亚马逊财务管理",
+      "category": "company",
       "source": "user",
       "status": "active",
       "description": "财务报表诊断、成本管控、现金流管理、税务合规。覆盖亚马逊店铺财务核算全场景，含利润测算、ROI 分析、补货现金流预测，为运营决策提供数据支撑与风险提示。",
@@ -258,8 +264,8 @@
     },
     {
       "id": "amazon-hr",
-      "name_cn": "团队HR",
-      "category": "amazon",
+      "name_cn": "亚马逊人事管理",
+      "category": "company",
       "source": "user",
       "status": "active",
       "description": "组织架构设计、招聘流程、薪酬体系、绩效考核、培训体系、合规风控。覆盖亚马逊运营团队从搭建到成熟的全生命周期管理，含 KPI 设计与绩效方案制定工具。",
@@ -1160,11 +1166,11 @@
     },
     {
       "id": "amazon-image-planner",
-      "name_cn": "",
-      "category": "",
+      "name_cn": "亚马逊图片提示词规划",
+      "category": "amazon",
       "source": "user",
-      "status": "unclassified",
-      "description": "",
+      "status": "active",
+      "description": "亚马逊产品图片提示词规划专家（v3.0）。专注生成高质量图片提示词，4种路由类型：主图&A+方案、品牌故事栏规划、参考海报反推替换、直接提示词补充。核心方法：20年美国电商设计经验角色注入 + 欧美高级感审美 + 每类3变体 + 产品一致性约束。",
       "installed_at": "2026-07-14",
       "updated_at": "2026-07-14",
       "dir_name": "amazon-image-planner"
